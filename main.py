@@ -4,11 +4,20 @@ import midi
 import notes
 import nav
 import vars
+import os
 import tkinter as tk
 from tkinter import ttk
 import mido
 
 # who needs classes lmao
+
+def resource_path(relative_path):    
+    try:       
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def midi_callback(message):
     midi.midi_callback(message)
@@ -65,7 +74,6 @@ def open_mappings():
     mappings.transient(root)
     mappings.title("Pad Mappings")
     mappings.resizable(False, False)
-    mappings.iconbitmap('icon.ico')
     mappings.focus_set()
     root.wm_attributes('-disabled', True)
     mappings.columnconfigure(0, weight=1, uniform=1)
@@ -173,7 +181,7 @@ def open_mappings():
 root = tk.Tk()
 root.title("GHWT MIDI Drum Mapper")
 root.resizable(False, False)
-root.iconbitmap('icon.ico')
+root.iconbitmap(default=resource_path('icon.ico'))
 root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=1)
 root.columnconfigure(2, weight=1)
