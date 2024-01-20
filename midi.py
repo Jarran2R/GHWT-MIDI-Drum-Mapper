@@ -1,4 +1,3 @@
-import mido
 import vars
 
 # I FINALLY GOT IT WORKING
@@ -32,6 +31,3 @@ def midi_callback(message):
     if message.type == "note_on" and message.velocity > 0 and message.note in vars.kick:
         vars.kick_messages.append(message)
         print(vars.kick_messages)
-    
-
-print("midi.py Initialized")
