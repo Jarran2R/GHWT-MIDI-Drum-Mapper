@@ -1,9 +1,10 @@
+import vgamepad as vg
 selected_midi = ""
 midi_list = []
 inport = ()
 fps = 60
 queue_inputs = False
-notes_active = False
+gamepad = vg.VX360Gamepad()
 
 # MIDI numbers for each lane.
 green = {}
@@ -12,6 +13,12 @@ yellow = {}
 blue = {}
 orange = {}
 kick = {}
+up = {}
+down = {}
+left = {}
+right = {}
+start = {}
+back = {}
 
 # MIDI messages
 green_messages = []
@@ -27,3 +34,10 @@ yellow_velocity = 0
 blue_velocity = 0
 orange_velocity = 0
 kick_velocity = 0
+
+green_active = False
+red_active = False
+yellow_active = False
+blue_active = False
+orange_active = False
+kick_active = False
