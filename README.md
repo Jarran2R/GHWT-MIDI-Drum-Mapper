@@ -11,5 +11,5 @@ __Has only been tested on GHWT:DE__
 
 ## TODO
 - Implement Quick Setup for mappings
-- Allow for choosing controller/keyboard for navigation
+- Allow for mapping controller/keyboard to navigation
 - Clean up GUI
