@@ -163,3 +163,5 @@ ViGEmClient.dll
 
 *.build/
 *.dist/
+
+config.ini

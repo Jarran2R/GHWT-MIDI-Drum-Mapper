@@ -4,7 +4,7 @@ import midi
 import notes
 import nav
 import vars
-import os
+import save
 import tkinter as tk
 from tkinter import ttk
 import mido
@@ -23,6 +23,7 @@ def update_dropdown():
 
 # Updates the selected midi device whenever selected
 def update_midi(event):
+    save.save_config()
     vars.selected_midi = mido.get_input_names()[select_midi.current()]
     print(vars.selected_midi)
     events = []
@@ -31,6 +32,9 @@ def update_midi(event):
     print(vars.inport)
     vars.inport = mido.open_input(name=vars.selected_midi)
     vars.inport.callback = midi_callback
+    save.load_config()
+    select_fps.set(vars.fps)
+    queue_inputs.set(vars.queue_inputs)
     print(vars.inport)
 
 def update_fps():
@@ -207,6 +211,7 @@ mappings_button.grid(row=2, column=2, sticky='e', padx=8, pady=8)
 
 # Saves everything and closes program
 def close_program():
+    save.save_config()
     sys.exit()
 
 # Intercept X button and run close_program (to shutdown everything properly)
