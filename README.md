@@ -10,7 +10,9 @@ __Has only been tested on GHWT:DE__
 > https://github.com/nefarius/ViGEmBus
 
 ## Features
-- GUI with customizable options and mappings
+- GUI with customizable settings and mappings
+- Automatic saving/loading of settings and mappings
+- Seperate settings/mappings for each MIDI device
 - Unlimited MIDI notes on one pad
 - Velocity support
 
@@ -30,7 +32,15 @@ Multiple MIDI numbers can be inputted by seperating each one with a comma and a 
 
 *Up/Down/Left/Right/Start/Back* take keyboard keys
 
+## For GHWT:DE
+**L Thumb X** - None
+
+**L Thumb Y** - Axis 1 (Inverted)
+
+**R Thumb X** - Axis 2
+
+**R Thumb Y** - Axis 3 (Inverted)
+
 ## TODO
-- Persistent mappings/settings
 - Implement Quick Setup for mappings
 - Allow for mapping controller to navigation
