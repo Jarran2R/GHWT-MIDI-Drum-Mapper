@@ -1,8 +1,8 @@
 # GHWT MIDI Drum Mapper
 
-GHWT MIDI Drum Mapper is a tool that allows you to use your midi edrums on Guitar Hero World Tour without using a drum brain.
+GHWT MIDI Drum Mapper is a tool that allows you to use your midi edrums on Guitar Hero World Tour: Definitive Edition without using a drum brain.
 
-__Has only been tested on GHWT:DE__
+__Only works on GHWT:DE with input hack__
 
 > [!IMPORTANT] 
 > You **MUST** download ViGEmBus driver or else the program will **NOT WORK**
@@ -32,7 +32,7 @@ Multiple MIDI numbers can be inputted by seperating each one with a comma and a 
 
 *Up/Down/Left/Right/Start/Back* take keyboard keys
 
-## For GHWT:DE
+## Axis bindings (for velocity)
 **L Thumb X** - None
 
 **L Thumb Y** - Axis 1 (Inverted)
