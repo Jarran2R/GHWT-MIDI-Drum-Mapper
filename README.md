@@ -42,7 +42,3 @@ Multiple MIDI numbers can be inputted by seperating each one with a comma and a 
 **R Thumb X** - Axis 2
 
 **R Thumb Y** - Axis 3 (Inverted)
-
-## TODO
-- Implement Quick Setup for mappings
-- Allow for mapping controller to navigation
