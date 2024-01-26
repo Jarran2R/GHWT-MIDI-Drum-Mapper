@@ -23,6 +23,8 @@ __Only works on GHWT:DE with input hack__
 |Queue Inputs|Queues the inputs so that they're guaranteed to go through|
 |FPS|The rate at which the virtual gamepad updates, the initial hit is always instant|
 
+*FPS should be set at or under the game's FPS, if the game's FPS drops below this value then the game WILL drop inputs*
+
 ## Mappings
 The **Mappings** button brings up the mappings page where you can assign MIDI numbers to each pad
 
